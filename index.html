@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="card">
+    <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+       <button><img src="images/search.png"></button>
+    </div>
+    <div class="error">
+        <p>Invalid city name</p>
+    </div>
+    <div class="weather">
+         <img src="images/rain.png" class="weather-icon">
+         <h1 class="temp">22°C</h1>
+         <h2 class="city">New York</h2>
+         <div class="details">
+            <div class="col">
+                <img src="images/humidity.png" >
+                <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/wind.png" >
+                <div>
+                <p class="wind">15km/h</p>
+                <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <!-- Save Favorite City Button -->
+        <button class="save-btn">Save as Favorite</button>
+        <p class="saved-msg" style="display: none;">City saved as your favourite!</p>
+    </div>
+    <!-- Display Saved Cities -->
+    <div class="saved-cities">
+        <h3>Your Saved Cities:</h3>
+        <ul class="city-list">
+            <!-- Dynamically populated list of saved cities will go here -->
+        </ul>
+        <button class="clear-btn">Clear Saved Cities</button>
+    </div>
+   </div>
+  <script src="/app.js"></script>
+</body>
+</html>
